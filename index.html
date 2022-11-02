@@ -9,76 +9,109 @@
 
 <script>
 
-    // - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
-    //     Вивести кожну змінну за допомогою: console.log
+    // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
 
-    let word1 = 'hello';
-    console.log(word1);
+    let arr = [15, 23, 45, -99, 0, true, false, 'okten', 'string', 'owu'];
+    console.log(arr[0]);
+    console.log(arr[1]);
+    console.log(arr[2]);
+    console.log(arr[3]);
+    console.log(arr[4]);
+    console.log(arr[5]);
+    console.log(arr[6]);
+    console.log(arr[7]);
+    console.log(arr[8]);
+    console.log(arr[9]);
+    console.log(arr[10]);
 
-    let word2 = 'owu';
-    console.log(word2);
+    // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
 
-    let word3 = 'com';
-    console.log(word3);
-
-    let word4 = 'ua';
-    console.log(word4);
-
-    let word5 = 1;
-    console.log(word5);
-
-    let word6 = 10;
-    console.log(word6);
-
-    let word7 = -999;
-    console.log(word7);
-
-    let word8 = 123;
-    console.log(word8);
-
-    let word9 = 3.14;
-    console.log(word9);
-
-    let word10 = 2.7;
-    console.log(word10);
-
-    let word11 = 16;
-    console.log(word11);
-
-    let word12 = true;
-    console.log(word12);
-
-    let word13 = false;
-    console.log(word13);
+    let book1 = {
+        title: 'Котигорошко',
+        pageCount: 54,
+        genre: 'story'
+    }
+    console.log(book1);
 
 
-    // Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person (Не об'єкт, просто за допомоги конкатенації)
+    let book2 = {
+        title: 'Барвінок',
+        pageCount: 167,
+        genre: 'story'
+    }
+    console.log(book2);
 
-    let firstName = 'Vladyslav';
-    let middleName = 'Mihailovich';
-    let lastName = 'Panfilov';
-    let person = firstName + " " + middleName + " " + lastName
-
-
-
-    // За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
-    // let a = 100; let b = '100'; let c = true;
-
-    let a = 100; let b = '100'; let c = true;
-    console.log(typeof a);
-    console.log(typeof b);
-    console.log(typeof c);
+    let book3 = {
+        title: 'Малятко',
+        pageCount: 99,
+        genre: 'story'
+    }
+    console.log(book3);
 
 
-    // Додаткове для тих хто цікавився prompt`oм
-    // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками. та вивести в консоль
+    // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - масив. Кожен автор має поля name,age
+
+    let bookNew1 = {
+        title: 'Малятко і Котигорошко',
+        pageCount: 145,
+        genre: 'story',
+        authors: [
+            {name: 'Mykola', age: 34},
+            {name: 'Isaak', age: 28},
+        ]
+    }
+    console.log(bookNew1);
+
+    let bookNew2 = {
+        title: 'Малятко і веселка',
+        pageCount: 87,
+        genre: 'story',
+        authors: [
+            {name: 'Nike', age: 84},
+            {name: 'Mike', age: 22},
+            {name: 'Wolf', age: 38},
+            {name: 'Pepe', age: 56},
+        ]
+    }
+    console.log(bookNew2);
+
+    let bookNew3 = {
+        title: 'Малятко і Карлсон',
+        pageCount: 1009,
+        genre: 'story',
+        authors: [
+            {name: 'Gosha', age: 78},
+            {name: 'Ira', age: 39},
+            {name: 'Lena', age: 45},
+        ]
+    }
+    console.log(bookNew3);
 
 
-    let name = window.prompt();
-    let middle = window.prompt();
-    let age = window.prompt();
-    let info = name + " " + middle + " " + age;
-    console.log(info);
+    // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
+
+    let arrPerson = [
+        {name: 'Gosha', username: 'Gosha1', password: '78aa'},
+        {name: 'Ira', username: 'Irusa', password: 'iuiu2'},
+        {name: 'Lena', username: 'Lenok234', password: '2341234'},
+        {name: 'Vita', username: 'V2341', password: 'jkgjhg'},
+        {name: 'Vova', username: 'VovaVova', password: 'jh87'},
+        {name: 'Oleg', username: 'O1', password: '908789'},
+        {name: 'Senia', username: 'Se67567', password: 'mnvbbn76'},
+        {name: 'Nina', username: 'nina67', password: 'jkhg'},
+        {name: 'Vlad', username: 'VladVlad', password: '888889'},
+        {name: 'Sasha', username: 'Sas', password: '8977896'},
+    ]
+    console.log(arrPerson[0].password,
+        arrPerson[1].password,
+        arrPerson[2].password,
+        arrPerson[3].password,
+        arrPerson[4].password,
+        arrPerson[5].password,
+        arrPerson[6].password,
+        arrPerson[7].password,
+        arrPerson[8].password,
+        arrPerson[9].password,);
 
 </script>
 
