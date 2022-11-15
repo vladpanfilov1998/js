@@ -1,0 +1,43 @@
+.users-box {
+    width: 350px;
+    height: 350px;
+    background-color: green;
+    margin: 18px;
+    border-radius: 10px;
+}
+
+.user-block {
+width: 100%;
+    background: darkcyan;
+}
+
+.address-block {
+    width: 100%;
+    background: violet;
+}
+
+.main {
+    width: 780px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: slategray;
+    margin-left: 150px;
+}
+
+.wrap {
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: slategray;
+    margin-left: 150px;
+}
+
+.post-card {
+    width: 250px;
+    height: 350px;
+    background-color: green;
+    margin: 18px;
+    border-radius: 10px;
+}
