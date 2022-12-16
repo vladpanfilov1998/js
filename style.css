@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    background: silver;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    font-family: "Arial Black";
+}
+
+.card:hover {
+    background: lightblue;
+    transition: .3s;
+    transform: rotateY(2grad);
+}
+
+.wrapper_details {
+    width: 400px;
+    background: silver;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 15px 0 15px 80px;
+    border: 2px solid darkcyan;
+    border-radius: 40px;
+    flex-direction: column;
+    align-items: normal;
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.wrapper_details:hover {
+    background: lightblue;
+    transition: .3s;
+    transform: rotateY(2grad);
+}
+
+.divUser {
+    font-family: "Arial Black";
+    padding: 15px;
+}
+
+.divUserDetails {
+    font-style: oblique;
+    font-family: "Times New Roman";
+}
+
