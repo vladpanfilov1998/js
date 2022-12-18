@@ -12,7 +12,7 @@ fetch(`https://jsonplaceholder.typicode.com/albums/${id}/photos`)
         for (const photo of photos) {
 
             let divCardComments = document.createElement('div');
-            divCardComments.classList.add('card_photo');
+            divCardComments.classList.add('card');
             divCardComments.innerHTML = `
                  <h3>PHOTOS</h3>
                  <h3>AlbumID: ${photo.albumId}</h3>

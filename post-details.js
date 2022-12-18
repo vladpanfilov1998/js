@@ -42,12 +42,10 @@ fetch('https://jsonplaceholder.typicode.com/posts')
                                         `;
                                     divCardFooter.appendChild(divCardComments)
                                 }
-
                                 buttonP.disabled = true;
                             }
                         })
                 }
-
                 divCard.append(buttonP, divCardFooter);
                 wrapper.appendChild(divCard);
                 document.body.appendChild(wrapper);

@@ -63,7 +63,6 @@ fetch('https://jsonplaceholder.typicode.com/users')
                     button.innerText = 'ПОКАЗАТИ ПОСТИ КОРИСТУВАЧА';
                     button.onclick = () => {
 
-
                         fetch('https://jsonplaceholder.typicode.com/posts')
                             .then(response => response.json())
                             .then(posts => {
@@ -118,7 +117,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
                      }
 
                     let buttonA = document.createElement('button');
-                    buttonA.innerText = 'ПОКАЗАТИ АЛЬБОМ';
+                    buttonA.innerText = 'ПОКАЗАТИ АЛЬБОМ КОРИСТУВАЧА';
                     buttonA.onclick = () => {
                         fetch('https://jsonplaceholder.typicode.com/users/' + user.id + '/albums')
                             .then(response => response.json())
@@ -142,7 +141,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
                     }
 
                     let buttonF = document.createElement('button');
-                    buttonF.innerText = 'ПОКАЗАТИ ФОТО';
+                    buttonF.innerText = 'ПОКАЗАТИ ФОТО КОРИСТУВАЧА';
                     buttonF.onclick = () => {
                     window.location.href = `album.html?data=${user.id}`;
                     };
