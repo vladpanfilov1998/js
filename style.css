@@ -1,0 +1,88 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    margin: 10px;
+}
+.link_button{
+    margin-top: 100px;
+    width: 100px;
+}
+.basket_main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid darkcyan;
+    border-radius: 40px;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background: azure;
+    font-family: Bahnschrift;
+    position: relative;
+}
+
+.basket_main:hover {
+    background: lightblue;
+    transition: .3s;
+    transform: rotateY(2grad);
+}
+.basket {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background: azure;
+
+}
+
+.basket:hover {
+    background: lightblue;
+    transition: .3s;
+    transform: rotateY(2grad);
+}
+
+.img{
+    width: 250px;
+    height: 250px;
+}
+.basket_button{
+    padding: 10px;
+    margin-top: 20px;
+}
+.remove{
+    margin-left: 2px;
+    margin-top: 12px;
+    padding: 10px;
+}
+
+.main {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background: azure;
+}
+
+.main:hover {
+    background: lightblue;
+    transition: .3s;
+    transform: rotateY(2grad);
+}
